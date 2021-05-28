@@ -8,8 +8,8 @@
     <meta name="generator" content="Hugo 0.80.0">
     <title>Garage 2021</title>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <!--<link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/pricing/">-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/pricing/">
+    <link  rel="icon" href="favicon-16x16.png" type="image/png"/>
 
     
 
