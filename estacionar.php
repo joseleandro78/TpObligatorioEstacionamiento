@@ -6,14 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Pricing example · Bootstrap v4.6</title>
+    <title>Garage 2021</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/pricing/">
 
     
 
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 
 
@@ -41,7 +41,7 @@
   <body>
     
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+  <h5 class="my-0 mr-md-auto font-weight-normal">Garage 2021</h5>
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="#">Features</a>
     <a class="p-2 text-dark" href="#">Enterprise</a>
@@ -52,7 +52,7 @@
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Pricing</h1>
+  <h1 class="display-4">Garage 2021</h1>
   <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
 </div>
 
@@ -70,7 +70,7 @@
           <li>Email support</li>
           <li>Help center access</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+        
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -85,7 +85,7 @@
           <li>Priority email support</li>
           <li>Help center access</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+        
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -100,10 +100,20 @@
           <li>Phone and email support</li>
           <li>Help center access</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+        
       </div>
     </div>
   </div>
+<form class="form-signin" action="IngresarPatente.php" method="post">
+
+  <h1 class="h3 mb-3 font-weight-normal">Ingrese Patente</h1>
+
+  <input name="patente" type="text" id="inputPassword" class="form-control" placeholder="Patente" required>
+  </div> 
+    
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+</form>
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
