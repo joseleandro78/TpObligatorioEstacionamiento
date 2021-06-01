@@ -6,7 +6,10 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Jumbotron Template · Bootstrap v4.6</title>
+
+    <?php
+      include_once("include_titulo.php");
+    ?>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/jumbotron/">
 
@@ -27,6 +30,19 @@
         user-select: none;
       }
 
+      .fondo{
+        background: url("fondo.jpg");
+        background-position: center;
+        background-size: cover;
+        font-size: 5rem;
+        font-weight: bold;
+        color: white;
+      }
+
+      .bienvenida{
+        text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+      }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -41,7 +57,7 @@
   <body>
     
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Nombre de la Aplicacion</a>
+  <a class="navbar-brand" href="#">Garage 2021</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -76,16 +92,15 @@
 <main role="main">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+  <div class="jumbotron fondo">
     <div class="container">
-      <h1 class="display-3">Bienvenido!</h1>
-      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <p class="bienvenida">Bienvenido a la página oficial de Garage 2021</p>
+      <a class="btn btn-primary btn-lg" href="estacionar.php" role="button">Ir a estacionar &raquo;</a>
     </div>
   </div>
 
-  <div class="container">
-    <!-- Example row of columns -->
+  <!-- <div class="container">
+    Example row of columns
     <div class="row">
       <div class="col-md-4">
         <h2>Heading</h2>
@@ -106,12 +121,12 @@
 
     <hr>
 
-  </div> <!-- /container -->
+  </div>  -->
 
 </main>
 
 <footer class="container">
-  <p>&copy; Company 2017-2021</p>
+  <p style="text-align: center;">&copy; Todos los derechos reservados - Garage 2021</p>
 </footer>
 
 

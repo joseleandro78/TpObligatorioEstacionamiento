@@ -6,7 +6,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Signin Template · Bootstrap v4.6</title>
+    <?php
+      include_once("include_titulo.php");
+    ?>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sign-in/">
 
@@ -43,9 +45,9 @@
     
 <form class="form-signin" action="hacerlogin.php" method="post">
 
-  <a href="/"><img class="mb-4" src="https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/bootstrap-4.png" alt="" width="72" height="72"></a>
+  <a href="/"><img src="AutoFavicon.jpg" width="40%"></a>
 
-  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+  <h1 class="h3 mb-3 font-weight-normal">Bienvenido</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
   <input name="correo" type="email"id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
   <label for="clave" type ="password" class="sr-only">Password</label>
@@ -55,8 +57,8 @@
       <input type="checkbox" value="remember-me"> Remember me
     </label>
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+  <p class="mt-5 mb-3 text-muted">Todos los derechos reservados <br> &copy;Garage 2021</p>
 </form>
 
 

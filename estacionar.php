@@ -6,10 +6,11 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Garage 2021</title>
+    <?php
+      include_once("include_titulo.php");
+    ?>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/pricing/">
-    <link  rel="icon" href="favicon-16x16.png" type="image/png"/>
 
     
 
@@ -42,7 +43,7 @@
   <body>
     
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal">Garage 2021</h5>
+  <a class="navbar-brand my-0 mr-md-auto font-weight-normal" href="/">Garage 2021</a>
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="#">Features</a>
     <a class="p-2 text-dark" href="#">Enterprise</a>
@@ -53,8 +54,11 @@
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Garage 2021</h1>
-  <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+
+  <h1 class="h3 mb-3 font-weight-normal">¿Que quiere hacer?</h1>
+  <a href="ingresarVehiculo.php" class="btn btn-primary btn-lg">Ingresar al estacionamiento</a>
+  <a href="salirVehiculo.php" class="btn btn-secondary btn-lg">Salir del estacionamiento</a>
+
 </div>
 
 <div class="container">
@@ -105,22 +109,11 @@
       </div>
     </div>
   </div>
-<form class="form-signin" action="IngresarPatente.php" method="post">
-
-  <h1 class="h3 mb-3 font-weight-normal">Ingrese Patente</h1>
-
-  <input name="patente" type="text" id="inputPassword" class="form-control" placeholder="Patente" required>
-  </div> 
-    
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
-  <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
-</form>
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
-        <img class="mb-2" src="../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-        <small class="d-block mb-3 text-muted">&copy; 2017-2021</small>
+        <small class="d-block mb-3 text-muted">Garage 2021 &copy;</small>
       </div>
       <div class="col-6 col-md">
         <h5>Features</h5>
