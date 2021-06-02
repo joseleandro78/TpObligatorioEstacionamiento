@@ -56,8 +56,8 @@
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
 
   <h1 class="h3 mb-3 font-weight-normal">¿Que quiere hacer?</h1>
-  <a href="ingresarVehiculo.php" class="btn btn-primary btn-lg">Ingresar al estacionamiento</a>
-  <a href="salirVehiculo.php" class="btn btn-secondary btn-lg">Salir del estacionamiento</a>
+  <a href="ingresarPatente.php" class="btn btn-primary btn-lg">Ingresar al estacionamiento</a>
+  <a href="salirPatente.php" class="btn btn-secondary btn-lg">Salir del estacionamiento</a>
 
 </div>
 
