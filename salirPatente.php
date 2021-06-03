@@ -69,7 +69,7 @@
 
     <div class="container">
 
-        <form class="form-signin" action="#" method="post">
+        <form class="form-signin" action="hacersalirpatente.php" method="post">
 
             <h1 class="h3 mb-3 font-weight-normal">Patente:</h1>
             <input name="patente" type="text" id="inputPassword" class="form-control" placeholder="Numero de patente" required> <br>

@@ -22,16 +22,12 @@ function guardarEstacionados($patente, $archivoTexto)
     escribir($patente, $archivoTexto);
 }
 
-// ¿?
-function leerEstacionados()
-{
-}
 
 function guardarCobrados($datosPatente, $cobradosTxt)
 {
     $patente = $datosPatente[0];
     $fechaIngreso = $datosPatente[1];
-    
+
     escribir($patente, $cobradosTxt);
     $tiempo = calcularTiempo($fechaIngreso);
     $totalPagar = calcularImporte($tiempo);
@@ -43,30 +39,40 @@ function buscarPatente($patente, $estacionadosTxt)
     $existe = "No";
     $lasPatentes = array();
 
-    $archivo = fopen($estacionadosTxt, "r");
+    if (file_exists($estacionadosTxt)) {
 
-    while (!feof($archivo)) {
-        $renglon = fgets($archivo);
-        $unaPatente = explode("=>", $renglon);
+        $archivo = fopen($estacionadosTxt, "r");
 
-        if (isset($unaPatente[1])) {
-            $lasPatentes[] = $unaPatente;
+        while (!feof($archivo)) {
+            $renglon = fgets($archivo);
+            $unaPatente = explode("=>", $renglon);
+
+            if (isset($unaPatente[1])) {
+                $lasPatentes[] = $unaPatente;
+            }
         }
-    }
 
-    fclose($archivo);
+        fclose($archivo);
 
-    foreach ($lasPatentes as $una) {
-        if ($una[0] == $patente) {
-            $patenteEncontrada = $una;
-            $existe = "Si";
+        foreach ($lasPatentes as $una) {
+            if ($una[0] == $patente) {
+                $patenteEncontrada = $una;
+                $existe = "Si";
+            }
         }
-    }
 
-    if ($existe == "No") {
-        echo "La patente NO existe!";
-    } else {
-        return $patenteEncontrada;
+        if ($existe == "No") {
+
+            echo "La patente NO existe!";
+        } 
+        else 
+        {
+            return $patenteEncontrada;
+        }
+    } 
+    else 
+    {
+        echo "No hay patentes estacionados";
     }
 }
 

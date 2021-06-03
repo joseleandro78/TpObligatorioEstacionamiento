@@ -9,7 +9,7 @@ $patente=$_POST['patente'];
 if ($patente!="")
 {
 	escribir($patente, "patentes.txt");
-	echo "La patente se guardo en el txt!"; 
+	echo "Vehiculo Estacionado"; 
 }
 else{
 	echo "ERROR, ingrese nro. de patente!!"; 

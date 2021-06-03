@@ -4,8 +4,10 @@
 
     $patente = $_POST['patente'];
 
-    // guardarCobrados($patente, 'patentes.txt' ,'cobrados.txt');
     $datosPatente = buscarPatente($patente, "patentes.txt");
-    guardarCobrados($datosPatente, "estacionados.txt");
+    if($datosPatente != NULL)
+    {
+        guardarCobrados($datosPatente, "estacionados.txt");
+    }
 
 ?>
